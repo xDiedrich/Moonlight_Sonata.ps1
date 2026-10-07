@@ -46,7 +46,7 @@ $total = 0
 foreach ($n in $notes) { $total += [int]($rate * $n[1] / 1000) }
 $samples = New-Object 'int16[]' $total
 $amp  = 32767 * $volume
-$fade = [int]($rate * 0.008)   # 8 ms fade in/out to avoid clicks
+$fade = [int]($rate * 0.008)  
 $pos  = 0
  
 foreach ($n in $notes) {
